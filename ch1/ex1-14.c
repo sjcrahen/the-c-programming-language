@@ -1,3 +1,5 @@
+/* Prints a histogram of the frequencies of characters in the input */
+
 #include <stdio.h>
 
 int main() {

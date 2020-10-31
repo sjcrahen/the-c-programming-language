@@ -1,11 +1,10 @@
-/* Removes trailing blanks and tabs from each line of input,
- * and deletes entirely blank lines
-*/
+/* Program to reverse the input */
 
 #include <stdio.h>
 #define DEFAULT_SIZE 1000
 
 int copyLine();
+void reverse(char s[], int length);
 
 char line[DEFAULT_SIZE];
 
@@ -13,15 +12,11 @@ int main() {
 	int len, i;
 
 	while ((len = copyLine()) > 0) {
-		i = len - 1;
-		while (line[i] == '\n' || line[i] == '\t' || line[i] == ' ') {
-			i--;	
-		}
-		if (i >= 0) {
-			for (int j = 0; j < i + 1; j++) {
-				printf("%c", line[j]);
-			}
-			printf("\n");
+		reverse(line, len);
+		i = 0;
+		while (line[i] != '\0') {
+			printf("%c", line[i]);
+			i++;
 		}
 	}
 	return 0;
@@ -39,4 +34,15 @@ int copyLine() {
 	}
 	line[i] = '\0';
 	return i;
+}
+
+void reverse(char s[], int length) {
+	int temp, i = 0, j = length - 2;
+	while (j > i) {
+		temp = line[i];
+		line[i] = line[j];
+		line[j] = temp;
+		i++;
+		j--;
+	}
 }

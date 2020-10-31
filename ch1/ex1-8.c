@@ -1,3 +1,5 @@
+/* this program counts blanks, tabs, and newlines */
+
 #include <stdio.h> 
 
 int main() { 

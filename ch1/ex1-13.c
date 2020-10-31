@@ -1,3 +1,5 @@
+/* Prints a histogram of the lengths of words in the input */
+
 #include <stdio.h>
 
 #define TRUE 1

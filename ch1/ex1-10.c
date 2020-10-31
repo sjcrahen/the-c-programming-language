@@ -1,3 +1,8 @@
+/* Copies input to output, replacing each
+ * tab by \t, each backspace by \b, and each
+ * backslash by \\
+*/
+
 #include <stdio.h>
 
 int main() {

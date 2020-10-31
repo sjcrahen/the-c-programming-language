@@ -1,3 +1,5 @@
+/* Prints all lines of the input that are longer than 80 characters */
+
 #include <stdio.h>
 #define DEFAULT_SIZE 1000
 

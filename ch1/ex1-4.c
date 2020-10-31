@@ -1,3 +1,5 @@
+/* print celsius to fahrenheit temperature conversion table */
+
 #include <stdio.h>
 
 /* print Fahrenheit-Celsius table

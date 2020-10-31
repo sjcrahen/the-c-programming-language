@@ -1,3 +1,8 @@
+/* Prints the length of the longest line of the input.
+ * The length of the longest line can be arbitrarily long,
+ * however, the printed length is limited to the buffer size.
+*/
+
 #include <stdio.h>
 #define DEFAULT_SIZE 1000
 

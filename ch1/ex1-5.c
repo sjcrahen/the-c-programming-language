@@ -1,3 +1,5 @@
+/* print temperature conversion table in reverse order */
+
 #include <stdio.h>
 
 /* print Fahrenheit-Celsius table

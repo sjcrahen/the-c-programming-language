@@ -1,3 +1,4 @@
+/* Prints a temperature conversion table using a function */
 #include <stdio.h>
 
 float calcCelsius(float fahr) {

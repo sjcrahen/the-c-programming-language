@@ -1,3 +1,9 @@
+/* test getchar() != EOF is 0 or 1 
+ * demonstrates order of operations
+ * correct application is:
+ * if ((c = getchar()) != EOF)...
+*/
+
 #include <stdio.h>
 
 int main() {
